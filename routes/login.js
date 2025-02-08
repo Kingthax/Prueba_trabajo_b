@@ -24,7 +24,7 @@ router.post('/login', (req, res) => {
       // Responder con el token
       res.json({ message: 'Usuario autenticado', token })
     });
-// 📌 Middleware para verificar token JWT
+// Middleware para verificar token JWT
 const verifyToken = (req, res, next) => {
     const token = req.headers['authorization'];
   
